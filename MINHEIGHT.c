@@ -6,9 +6,9 @@ int main(void) {
 	scanf("%d",&testcase);
 	while(testcase--)
 	{
-	    int chef_height,min_height;
-	    scanf("%d %d",&chef_height,&min_height);
-	    if(min_height<=chef_height)
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    if(a>=b)
 	    {
 	        printf("YES\n");
 	    }

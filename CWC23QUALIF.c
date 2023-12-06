@@ -2,16 +2,16 @@
 
 int main(void) {
 	// your code goes here
-	int juhi;
-	scanf("%d",&juhi);
-	if(juhi>=12)
+	int point;
+	scanf("%d",&point);
+	if(point>=12)
 	{
-	    printf("Yes\n");
+	    printf("Yes");
 	}
 	else
-	{
-	    printf("No\n");
-	}
+{
+    printf("No");
+}
 	return 0;
 }
 

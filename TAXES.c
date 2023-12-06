@@ -1,20 +1,19 @@
 #include <stdio.h>
 
 int main(void) {
-	// your code goes here
-	int testcase;
+    int testcase;
 	scanf("%d",&testcase);
 	while(testcase--)
 	{
-	    int income;
-	    scanf("%d",&income);
-	    if(income>100)
+	    int a;
+	    scanf("%d",&a);
+	    if(a<=100)
 	    {
-	        printf("%d\n",income-10);
+	        printf("%d\n",a);
 	    }
 	    else
 	    {
-	        printf("%d\n",income);
+	        printf("%d\n",a-10);
 	    }
 	}
 	return 0;

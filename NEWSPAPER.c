@@ -4,7 +4,7 @@ int main(void) {
 	// your code goes here
 	int a;
 	scanf("%d",&a);
-	if(a>=6 && a<=8)
+	if(a==8 ||a==9||a==10)
 	{
 	    printf("YES\n");
 	}

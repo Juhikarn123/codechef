@@ -6,13 +6,13 @@ int main(void) {
 	scanf("%d",&testcase);
 	while(testcase--)
 	{
-	    int time;
-	    scanf("%d",&time);
-	    if(time>=30)
+	    int a;
+	    scanf("%d",&a);
+	    if(a>=30)
 	    {
 	        printf("YES\n");
 	    }
-	    else 
+	    else
 	    {
 	        printf("NO\n");
 	    }

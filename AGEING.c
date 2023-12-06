@@ -2,13 +2,14 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int chef,chefina;
-	    scanf("%d",&chef);
-	    chefina=chef-10;
+	    int a;
+	    scanf("%d",&a);
+	    int chef=a-20;
+	    int chefina=10+chef;
 	    printf("%d\n",chefina);
 	}
 	return 0;

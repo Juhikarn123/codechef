@@ -2,9 +2,9 @@
 
 int main(void) {
 	// your code goes here
-	int rupe;
-	scanf("%d",&rupe);
-	printf("%d\n",2*rupe);
+	char a[10];
+	scanf("%s",a);
+	printf("%c",a[6]);
 	return 0;
 }
 

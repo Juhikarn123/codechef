@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int main(void) 
-{
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+int main(void) {
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int Chef_rank;
-	    scanf("%d",&Chef_rank);
-	    if(Chef_rank<=10)
+	    int a;
+	    scanf("%d",&a);
+	    if(a<=10)
 	    {
 	        printf("YES\n");
 	    }
@@ -16,7 +16,6 @@ int main(void)
 	    {
 	        printf("NO\n");
 	    }
-	    
 	}
 	return 0;
 }

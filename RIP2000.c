@@ -2,12 +2,11 @@
 
 int main(void) {
 	// your code goes here
-	int number_notes,rupees;
-	scanf("%d",&number_notes);
-	rupees=number_notes*2000;
-	int total_notes=rupees/500;
-	printf("%d",total_notes);
-	
+	int t;
+	scanf("%d",&t);
+	int total=t*2000;
+	int note=total/500;
+	printf("%d\n",note);
 	return 0;
 }
 

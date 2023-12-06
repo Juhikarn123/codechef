@@ -1,17 +1,16 @@
 #include <stdio.h>
 
-int main(void) 
-{
-    int testcase;
-    scanf("%d",&testcase);
-    while(testcase--)
-    {
-        int week,coin,total_amount;
-        scanf("%d %d",&week,&coin);
-        total_amount=week*coin;
-        printf("%d\n",total_amount);
-        
-    }
+int main(void) {
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    int rem=a*b;
+	    printf("%d\n",rem);
+	}
 	return 0;
 }
 

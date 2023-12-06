@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
+	// your code goes here
 	int testcase;
 	scanf("%d",&testcase);
 	while(testcase--)
 	{
-	    int candies;
-	    scanf("%d",&candies);
-	    if(candies%3==0)
+	    int a;
+	    scanf("%d",&a);
+	    if(a%3==0)
 	    {
 	        printf("YES\n");
 	    }

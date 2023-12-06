@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-int main(void) 
-{
-    int testcase;
-    scanf("%d",&testcase);
-    while(testcase--)
-    {
-        int km,total_distance;
-        scanf("%d",&km);
-        total_distance=km*10;
-        printf("%d\n",total_distance);
-    }
+int main(void) {
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int a;
+	    scanf("%d",&a);
+	    int total=a*2*5;
+	    printf("%d\n",total);
+	}
 	return 0;
 }
 

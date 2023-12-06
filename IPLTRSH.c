@@ -2,20 +2,21 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
+		int testcase;
 	scanf("%d",&testcase);
 	while(testcase--)
 	{
-	    int need,available;
-	    scanf("%d %d",&need,&available);
-	    if(need<=available)
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    int c=a-b;
+	    if(a<=b)
 	    {
 	        printf("0\n");
 	    }
 	    else
-	    {
-	        printf("%d\n",need-available);
-	    }
+	    
+	    printf("%d\n",c);
+	    
 	}
 	return 0;
 }

@@ -1,17 +1,16 @@
 #include <stdio.h>
 
-int main(void) 
-{
-    int testcase;
-    scanf("%d",&testcase);
-    while(testcase--)
-    {
-        int need,collected,rem;
-        scanf("%d %d",&need,&collected);
-        rem=need-collected;
-        printf("%d\n",rem);
-    }
-	
+int main(void) {
+	// your code goes here
+		int testcase;
+	scanf("%d",&testcase);
+	while(testcase--)
+	{
+	 int a,b;
+	 scanf("%d %d",&a,&b);
+	 int c=a-b;
+	 printf("%d\n",c);
+	}
 	return 0;
 }
 

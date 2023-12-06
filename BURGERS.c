@@ -1,20 +1,21 @@
 #include <stdio.h>
 
-int main(void)
-{
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+int main(void) {
+	// your code goes here
+	
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int patties,buns;
-	    scanf("%d %d",&patties,&buns);
-	    if(patties<buns)
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    if(a<=b)
 	    {
-	        printf("%d\n",patties);
+	        printf("%d\n",a);
 	    }
 	    else
 	    {
-	        printf("%d\n",buns);
+	        printf("%d\n",b);
 	    }
 	}
 	return 0;

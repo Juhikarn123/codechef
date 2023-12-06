@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int people,capacity;
-	    scanf("%d %d",&people,&capacity);
-	    if(people<=capacity)
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    if(a<=b)
 	    {
 	        printf("YES\n");
 	    }

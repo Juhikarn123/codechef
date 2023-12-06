@@ -2,9 +2,9 @@
 
 int main(void) {
 	// your code goes here
-	int a;
-	scanf("%d",&a);
-	if(a>=6 && a<=8)
+	int juhi,jashi;
+	scanf("%d %d",&juhi,&jashi);
+	if(juhi>=60 && jashi<=130)
 	{
 	    printf("YES\n");
 	}
@@ -12,6 +12,7 @@ int main(void) {
 	{
 	    printf("NO\n");
 	}
+	
 	return 0;
 }
 

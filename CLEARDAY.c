@@ -2,10 +2,10 @@
 
 int main(void) {
 	// your code goes here
-	int juhi,jashi;
-	scanf("%d %d",&juhi,&jashi);
-	int total=juhi+jashi;
-	printf("%d\n",7-total);
+	int rainy,cloudy,clear;
+	scanf("%d %d",&rainy,&cloudy);
+	clear=7-rainy-cloudy;
+	printf("%d\n",clear);
 	return 0;
 }
 

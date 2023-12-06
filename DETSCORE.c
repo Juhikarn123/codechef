@@ -1,13 +1,18 @@
-#include<stdio.h>
-int main()
-{
-    int testcase;
-    scanf("%d",&testcase);
-    while(testcase--)
-    {
-        int worth_point,passed_testcase,score;
-        scanf("%d %d",&worth_point,&passed_testcase);
-        score=(worth_point/10)*passed_testcase;
-        printf("%d\n",score);
-    }
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	
+	int testcase;
+	scanf("%d",&testcase);
+	while(testcase--)
+	{
+	   int a,b;
+	   scanf("%d %d",&a,&b);
+	   int j=a/10;
+	   int total=j*b;
+	   printf("%d\n",total);
+	}
+	return 0;
 }
+

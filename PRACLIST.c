@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
+	// your code goes here
 	
-	int all,attempted,unattempted;
-	scanf("%d %d",&all,&attempted);
-	unattempted=all-attempted;
-	printf("%d",unattempted);
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    int rem=a-b;
+	    printf("%d\n",rem);
+	
 	return 0;
 }
 

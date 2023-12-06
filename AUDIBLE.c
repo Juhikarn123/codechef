@@ -6,15 +6,15 @@ int main(void) {
 	scanf("%d",&testcase);
 	while(testcase--)
 	{
-	    int freq;
-	    scanf("%d",&freq);
-	    if(freq>=67 && freq<=45000)
+	    int a;
+	    scanf("%d",&a);
+	    if(a<67 || a>45000)
 	    {
-	        printf("YES\n");
+	        printf("NO\n");
 	    }
 	    else
 	    {
-	        printf("NO\n");
+	        printf("YES\n");
 	    }
 	}
 	return 0;

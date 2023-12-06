@@ -6,12 +6,11 @@ int main(void) {
 	scanf("%d",&testcase);
 	while(testcase--)
 	{
-	    int rupees1,rupees2;
-	    scanf("%d %d",&rupees1,&rupees2);
-	    int total=10*rupees1+90*rupees2;
-	    printf("%d\n",total);
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    int t=10*a+90*b;
+	    printf("%d\n",t);
 	}
-	
 	return 0;
 }
 

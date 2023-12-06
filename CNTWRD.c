@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 int main(void) {
-    int testcase;
-    scanf("%d",&testcase);
-    while(testcase--)
-    {
-        int pages,words;
-        scanf("%d %d",&pages,&words);
-        int total_words=pages*words;
-        printf("%d\n",total_words);
-    }
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    int c=a*b;
+	    printf("%d\n",c);
+	}
 	return 0;
 }
 

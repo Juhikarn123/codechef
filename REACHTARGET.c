@@ -2,14 +2,14 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int target_run,current_run,required_run;
-	    scanf("%d %d",&target_run,&current_run);
-	    required_run=target_run-current_run;
-	    printf("%d\n",required_run);
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    int total=a-b;
+	    printf("%d\n",total);
 	}
 	return 0;
 }

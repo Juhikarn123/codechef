@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
+	// your code goes here
 	int testcase;
 	scanf("%d",&testcase);
 	while(testcase--)
 	{
-	    int payTax,earn,invest;
-	    scanf("%d %d",&payTax,&earn);
-	    invest=payTax-earn;
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    int invest=a-b;
 	    printf("%d\n",invest);
 	}
 	return 0;

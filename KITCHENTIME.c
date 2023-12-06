@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-int main(void) 
-{
+int main(void) {
 	// your code goes here
-	int testcase;
+		int testcase;
 	scanf("%d",&testcase);
 	while(testcase--)
 	{
-	    int start,end,hour;
-	    scanf("%d %d",&start,&end);
-	    hour=end-start;
-	    printf("%d\n",hour);
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    int c=b-a;
+	    printf("%d\n",c);
+	    
 	}
 	return 0;
 }
