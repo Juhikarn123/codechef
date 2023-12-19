@@ -1,41 +1,54 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int max(int a, int b) {
-    return (a > b) ? a : b;
-}
+#define max(x, y)       \
+  ({                    \
+    typeof(x) _x = (x); \
+    typeof(y) _y = (y); \
+    _x > _y ? _x : _y;  \
+  })
 
-int findMaxSum(int arr[], int n) {
-    int *dp = (int *)malloc(n * sizeof(int));
+#define min(x, y)       \
+  ({                    \
+    typeof(x) _x = (x); \
+    typeof(y) _y = (y); \
+    _x < _y ? _x : _y;  \
+  })
 
-    // Base cases
-    dp[0] = arr[0];
-    dp[1] = arr[0] + arr[1];
-    dp[2] = max(dp[1], max(arr[1] + arr[2], arr[0] + arr[2]));
-
-    // Iterate over the array to fill the dp array
-    for (int i = 3; i < n; i++) {
-        dp[i] = max(max(dp[i - 1], dp[i - 2] + arr[i]), dp[i - 3] + arr[i - 1] + arr[i]);
+long long solve(int* nums, const long long n){
+    long long sum[4];
+    
+    sum[0] = nums[0];
+    
+    if(n>=2){
+        sum[1] = nums[0] + nums[1];
     }
-
-    int result = dp[n - 1];
-    free(dp);
-    return result;
+    if(n>=3){
+        sum[2] = max( sum[1] , max(nums[0]+nums[2], nums[1]+nums[2]));
+    }
+    
+    for(int i=3; i<n; i++){
+        sum[3] =
+        max( sum[2], max(sum[1]+nums[i], sum[0]+nums[i-1]+nums[i]));
+        
+        for(int j=0; j<3; j++) sum[j] = sum[j+1];
+    }
+    return sum[3];
 }
 
 int main(void) {
-    int n, i;
-    scanf("%d", &n);
-    int *arr = (int *)malloc(n * sizeof(int));
-
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    int maxSum = findMaxSum(arr, n);
-    printf("%d\n", maxSum);
-
-    free(arr);
-    return 0;
+	// your code goes here
+	long long n;
+	scanf("%d" , &n);
+	
+	int* nums = (int*)malloc(sizeof(int)*n);
+	for(long long i=0; i<n; i++)
+	    scanf( "%d", &nums[i]);
+	    
+	long long answer = solve(nums, n);
+	printf("%d\n", answer);
+	
+	free(nums);
+	    
+	
+	return 0;
 }
-

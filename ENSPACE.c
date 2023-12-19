@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 int main(void) {
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int total_space,xfile,yfile;
-	    scanf("%d %d %d",&total_space,&xfile,&yfile);
-	    int remaining_space=xfile*1+yfile*2;
-	    if(remaining_space<=total_space)
+	    int a,b,c;
+	    scanf("%d %d %d",&a,&b,&c);
+	    int z=b*1+c*2;
+	    if(a>=z)
 	    {
 	        printf("YES\n");
 	    }

@@ -1,14 +1,16 @@
 #include <stdio.h>
 
 int main(void) {
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int week,days;
-	    scanf("%d %d",&week,&days);
-	    int remaining_day=7*week-days;
-	    printf("%d\n",remaining_day);
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    int d=a*7;
+	    int rem=d-b;
+	    printf("%d\n",rem);
 	}
 	return 0;
 }

@@ -1,26 +1,26 @@
 #include <stdio.h>
 
 int main(void) {
+	// your code goes here
 	int testcase;
 	scanf("%d",&testcase);
 	while(testcase--)
 	{
-	    int cost_price,selling_price;
-	    scanf("%d %d",&cost_price,&selling_price);
-	    if(cost_price>selling_price)
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    if(a>b)
 	    {
 	        printf("LOSS\n");
 	    }
-	    else if(cost_price<selling_price)
+	    else if(a<b)
 	    {
 	        printf("PROFIT\n");
 	    }
-	    else if(cost_price==selling_price)
+	    else
 	    {
 	        printf("NEUTRAL\n");
 	    }
 	}
-	
 	return 0;
 }
 

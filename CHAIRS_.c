@@ -1,21 +1,23 @@
 #include <stdio.h>
 
 int main(void) {
+	// your code goes here
 	int testcase;
 	scanf("%d",&testcase);
 	while(testcase--)
 	{
-	    int required_chair,available_chair;
-	    scanf("%d %d",&required_chair,&available_chair);
-	    int need_chair=required_chair-available_chair;
-	    if(required_chair>available_chair)
+	    int a,b,c;
+	    scanf("%d %d",&a,&b);
+	    if(a<b)
 	    {
-	        printf("%d\n",need_chair);
+	       c=0;
 	    }
-	    if(required_chair<=available_chair)
+	    else
 	    {
-	        printf("0\n");
+	        c=a-b;
 	    }
+	    
+	    printf("%d\n",c);
 	}
 	return 0;
 }

@@ -1,21 +1,21 @@
 #include <stdio.h>
 
-int main(void) 
-{
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+int main(void) {
+	// your code goes 
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int number1,number2,Bob_sum;
-	    scanf("%d %d %d",&number1,&number2,&Bob_sum);
-	    int sum=number1+number2;
-	    if(Bob_sum==sum)
+	    int a,b,c;
+	    scanf("%d %d %d",&a,&b,&c);
+	    int d=a+b;
+	    if(d==c)
 	    {
 	        printf("YES\n");
 	    }
 	    else
 	    {
-	        printf("No\n");
+	        printf("NO\n");
 	    }
 	}
 	return 0;

@@ -1,45 +1,36 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Comparator function for qsort
-int compare(const void *a, const void *b) {
-    return (*(int *)a - *(int *)b);
+int cmp(const void *x, const void *y)
+{
+    return *(int *)x - *(int *)y;
 }
 
-int main(void) {
-    int arraySize, targetDifference, *numbers;
+int main(void)
+{
+    int N, K, *A;
+    scanf("%d%d", &N, &K);
 
-    // Input: array size and target difference
-    scanf("%d%d", &arraySize, &targetDifference);
-
-    // Allocate memory for the array
-    numbers = (int *)malloc(arraySize * sizeof(int));
-
-    // Input: array elements
-    for (int i = 0; i < arraySize; i++) {
-        scanf("%d", &numbers[i]);
+    A = (int *)malloc(N * sizeof(int));
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &A[i]);
     }
 
-    // Sort the array
-    qsort(numbers, arraySize, sizeof(int), compare);
+    qsort(A, N, sizeof(int), cmp);
 
-    int startIndex = 0, endIndex = 1, totalCount = 0;
-
-    // Count pairs with a difference greater than or equal to the target
-    while (startIndex < arraySize && endIndex < arraySize) {
-        if (numbers[endIndex] - numbers[startIndex] >= targetDifference) {
-            totalCount += arraySize - endIndex;
-            startIndex++;
-        } else {
-            endIndex++;
+    int i = 0, j = 1, count = 0;
+    while (i < N && j < N) {
+        if (A[j] - A[i] >= K) {
+            count += N - j;
+            i++;
+        }
+        else {
+            j++;
         }
     }
 
-    // Output: total count of pairs
-    printf("%d\n", totalCount);
+    printf("%d\n", count);
 
-    // Free allocated memory
-    free(numbers);
-    
+    free(A);
     return 0;
 }

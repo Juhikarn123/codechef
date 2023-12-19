@@ -1,19 +1,20 @@
 #include <stdio.h>
 
 int main(void) {
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int meeting_time;
-	    scanf("%d",&meeting_time);
-	    if(meeting_time>30)
+	    int a;
+	    scanf("%d",&a);
+	    if(a<=30)
 	    {
-	        printf("YES\n");
+	        printf("NO\n");
 	    }
 	    else
 	    {
-	        printf("NO\n");
+	        printf("YES\n");
 	    }
 	}
 	return 0;

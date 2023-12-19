@@ -1,0 +1,82 @@
+#include<stdio.h>
+int main()
+{
+	long long int L,a,i,c1=0,c2=0,c[100000],max=0,max1=0,max2=0,p=0,m1=0,m2=0,m=0,top=-1;
+	scanf("%lli ",&L);
+	for(i=0;i<L;i++)
+	{
+		scanf("%lli",&a);
+		if(a==1)
+		{
+			c1++;
+			if(p!=a)
+			{
+				m++;
+				c[++top]=1;
+			}
+			else
+				c[++top]=0;
+			p=a;
+		}
+		if(a==2)
+		{
+			c1--;
+			if(m>max)
+				max=m;
+			if(c[top]==1&&top>=0)
+			{
+				if(p==1)
+					p=3;
+				else
+					p=1;
+			}
+			m=m-c[top--];
+		}
+		if(a==3)
+		{
+			c2++;
+			if(p!=a)
+			{
+				m++;
+				c[++top]=1;
+			}
+			else
+				c[++top]=0;
+			p=a;
+		}
+		if(a==4)
+		{
+			c2--;
+			if(m>max)
+				max=m;
+			if(c[top]==1&&top>=0)
+			{
+				if(p==1)
+					p=3;
+				else
+					p=1;
+			}
+			m=m-c[top--];
+		}
+		if(c1==0)
+		{
+			if(m1>max1)
+				max1=m1;
+			m1=0;
+		}
+		else
+			m1++;
+		if(c2==0)
+		{
+			if(m2>max2)
+				max2=m2;
+			m2=0;
+		}
+		else
+			m2++;
+		if(top<0)
+			p=0;
+	}
+	printf("%lli %lli %lli",max,max1+1,max2+1);
+	return 0;
+}
