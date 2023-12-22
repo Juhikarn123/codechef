@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int main(void) 
-{
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+int main(void) {
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int cost,mana_point;
-	    scanf("%d %d",&cost,&mana_point);
-	    int maximum=mana_point/cost;
-	    printf("%d\n",maximum);
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    int c=b/a;
+	    printf("%d\n",c);
 	}
 	return 0;
 }

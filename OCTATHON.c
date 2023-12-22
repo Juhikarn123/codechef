@@ -2,17 +2,17 @@
 
 int main(void) {
 	// your code goes here
-	int hour;
-	scanf("%d",&hour);
-	if(hour<3)
+	int a;
+	scanf("%d",&a);
+	if(a<3)
 	{
 	    printf("GOLD\n");
 	}
-	else if(hour<6 && hour>=3)
+	else if(a<6 &&a>=3)
 	{
 	    printf("SILVER\n");
 	}
-	else if(hour>=6)
+	else
 	{
 	    printf("BRONZE\n");
 	}

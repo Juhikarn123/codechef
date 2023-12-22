@@ -1,22 +1,24 @@
 #include <stdio.h>
 
-int main(void)
-{
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+int main(void) {
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int chocolate,candy;
-	    scanf("%d %d",&chocolate,&candy);
-	    if(2*chocolate>5*candy)
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    int a1=a*2;
+	    int b1=b*5;
+	    if(a1>b1)
 	    {
 	        printf("Chocolate\n");
 	    }
-	    else if(2*chocolate==5*candy)
+	    else if(a1==b1)
 	    {
 	        printf("Either\n");
 	    }
-	    else if(2*chocolate<5*candy)
+	    else
 	    {
 	        printf("Candy\n");
 	    }
