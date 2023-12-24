@@ -2,25 +2,25 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	   int speed;
-	   scanf("%d",&speed);
-	   if(speed<=70)
-	   {
-	       printf("0\n");
-	   }
-	   else if(speed>70 &&speed<=100)
-	   {
-	       printf("500\n");
-	   }
-	   else if(speed>100)
-	   {
-	       printf("2000\n");
-	   }
+	    int a;
+	    scanf("%d",&a);
+	    if(a<=70)
+	    {
+	        printf("0\n");
+	    }
+	    else if(a>70 &&a<=100)
+	    {
+	        printf("500\n");
+	    }
+	    else
+	    {
+	        printf("2000\n");
+	    }
 	}
-	return 0;
+
 }
 

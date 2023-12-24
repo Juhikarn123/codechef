@@ -2,14 +2,13 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int need_pass,coll_pass;
-	    scanf("%d %d",&need_pass,&coll_pass);
-	    int total_need=need_pass+1;
-	    if(total_need<=coll_pass)
+	    int a,b;
+	    scanf("%d %d",&a,&b);
+	    if(a+1<=b)
 	    {
 	        printf("YES\n");
 	    }
@@ -18,6 +17,6 @@ int main(void) {
 	        printf("NO\n");
 	    }
 	}
-	return 0;
+
 }
 

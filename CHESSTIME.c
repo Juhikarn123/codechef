@@ -2,16 +2,16 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int hour;
-	    scanf("%d",&hour);
-	    int min=hour*60;
-	    int game=min/20;
-	    printf("%d\n",game);
+	    int a;
+	    scanf("%d",&a);
+	    int minute=a*60;
+	    int games=minute/20;
+	    printf("%d\n",games);
 	}
-	return 0;
+
 }
 

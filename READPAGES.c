@@ -2,14 +2,13 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int total,perday,day;
-	    scanf("%d %d %d",&total,&perday,&day);
-	    int rem=day*perday;
-	    if(rem>=total)
+	    int a,b,c;
+	    scanf("%d %d %d",&a,&b,&c);
+	    if(b*c>=a)
 	    {
 	        printf("YES\n");
 	    }
@@ -18,6 +17,6 @@ int main(void) {
 	        printf("NO\n");
 	    }
 	}
-	return 0;
+
 }
 
