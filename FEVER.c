@@ -2,22 +2,21 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int n;
-	    scanf("%d",&n);
-	    if(n>98)
+	    int a;
+	    scanf("%d",&a);
+	    if(a>98)
 	    {
 	        printf("YES\n");
 	    }
 	    else
-	    
-	{
-	    printf("NO\n");
+	    {
+	        printf("NO\n");
+	    }
 	}
-	}
-	return 0;
+
 }
 

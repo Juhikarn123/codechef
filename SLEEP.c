@@ -2,21 +2,20 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
-	{
-	    int n;
-	    scanf("%d",&n);
-	    if(n<7)
-	    {
-	        printf("YES\n");
-	    }
-	    else if(n>=7)
-	    {
-	        printf("NO\n");
-	    }
-	}
-	return 0;
+int t;
+scanf("%d",&t);
+while(t--)
+{
+    int a;
+    scanf("%d",&a);
+    if(a>=7)
+    {
+        printf("NO\n");
+    }
+    else
+    {
+        printf("YES\n");
+    }
+}
 }
 

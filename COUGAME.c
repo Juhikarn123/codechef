@@ -2,15 +2,15 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int girl,boy;
-	    scanf("%d %d",&girl,&boy);
-	    int left_boy=boy-girl;
-	    printf("%d\n",left_boy);
+	    int g,b;
+	    scanf("%d %d",&g,&b);
+	    int rem_b=b-g;
+	    printf("%d\n",rem_b);
 	}
-	return 0;
+
 }
 

@@ -2,22 +2,21 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
 	    int available,interested;
 	    scanf("%d %d",&available,&interested);
-	    if((available==interested) ||(available>interested))
+	    if(available>=interested)
 	    {
 	        printf("0\n");
 	    }
-	    else if(available<interested)
+	    else
 	    {
 	        printf("%d\n",interested-available);
 	    }
-	    
 	}
-	return 0;
+
 }
 
