@@ -2,22 +2,22 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int interest_rate,current_inflation;
-	    scanf("%d %d",&interest_rate,&current_inflation);
-	    int investment=2*current_inflation;
-	    if(investment>interest_rate)
-	    {
-	        printf("NO\n");
-	    }
-	    else
+	    int in_rate,inf_rate;
+	    scanf("%d %d",&in_rate,&inf_rate);
+	    int twice=inf_rate*2;
+	    if(twice<=in_rate)
 	    {
 	        printf("YES\n");
 	    }
+	    else
+	    {
+	        printf("NO\n");
+	    }
 	}
-	return 0;
+
 }
 

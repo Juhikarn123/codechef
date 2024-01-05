@@ -2,14 +2,13 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int fr,cost,money;
-	    scanf("%d %d %d",&fr,&cost,&money);
-	    int need_money=fr*cost;
-	    if(need_money<=money)
+	    int a,b,c;
+	    scanf("%d %d %d",&a,&b,&c);
+	    if(a*b<=c)
 	    {
 	        printf("YES\n");
 	    }
@@ -18,6 +17,6 @@ int main(void) {
 	        printf("NO\n");
 	    }
 	}
-	return 0;
+
 }
 

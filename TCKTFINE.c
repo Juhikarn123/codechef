@@ -2,16 +2,14 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int fee,p,t;
-	    scanf("%d %d %d",&fee,&p,&t);
-	    int wt=p-t;
-	    int fine=fee*wt;
-	    printf("%d\n",fine);
+	    int a,b,c;
+	    scanf("%d %d %d",&a,&b,&c);
+	    printf("%d\n",(b-c)*a);
 	}
-	return 0;
+
 }
 

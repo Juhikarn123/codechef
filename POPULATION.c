@@ -2,15 +2,17 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int population,left_people,immigrate;
-	    scanf("%d %d %d",&population,&left_people,&immigrate);
-	    int final_population=population-left_people+immigrate;
-	    printf("%d\n",final_population);
+	    int a,b,c;
+	    scanf("%d %d %d",&a,&b,&c);
+	    int d=a-b+c;
+	    printf("%d\n",d);
+	    
 	}
-	return 0;
+	
+
 }
 

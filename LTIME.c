@@ -2,13 +2,13 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int time;
-	    scanf("%d",&time);
-	    if(time>=1 && time<=4)
+	    int a;
+	    scanf("%d",&a);
+	    if(a>=1 && a<=4)
 	    {
 	        printf("YES\n");
 	    }
@@ -17,6 +17,6 @@ int main(void) {
 	        printf("NO\n");
 	    }
 	}
-	return 0;
+
 }
 

@@ -2,21 +2,26 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int a,b;
+	    int a,b,c;
 	    scanf("%d %d",&a,&b);
-	    if(a>=b)
+	    if(a>b)
 	    {
-	        printf("%d\n",7-a);
+	        c=7-a;
 	    }
 	    else if(a<b)
 	    {
-	        printf("%d\n",7-b);
+	        c=7-b;
 	    }
+	    else if(a==b)
+	    {
+	        c=7-a;
+	    }
+	    printf("%d\n",c);
 	}
-	return 0;
+
 }
 

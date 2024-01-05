@@ -2,15 +2,15 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int hour;
-	    scanf("%d",&hour);
-	    int water=hour*2;
-	    printf("%d\n",water);
+	    int a;
+	    scanf("%d",&a);
+	    int litre=a*2;
+	    printf("%d\n",litre);
 	}
-	return 0;
+
 }
 

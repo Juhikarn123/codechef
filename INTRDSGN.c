@@ -2,23 +2,28 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
 	    int x1,y1,x2,y2;
 	    scanf("%d %d %d %d",&x1,&y1,&x2,&y2);
-	    int f_cost=x1+y1;
-	    int s_cost=x2+y2;
-	    if(f_cost<s_cost)
+	    int c1=x1+y1;
+	    int c2=x2+y2;
+	    if(c1==c2)
 	    {
-	        printf("%d\n",f_cost);
+	        printf("%d\n",c1);
 	    }
-	    else
+	    else if(c1<c2)
 	    {
-	        printf("%d\n",s_cost);
+	        printf("%d\n",c1);
 	    }
+	    else if(c1>c2)
+	    {
+	        printf("%d\n",c2);
+	    }
+	    
 	}
-	return 0;
+
 }
 

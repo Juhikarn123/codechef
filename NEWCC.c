@@ -2,20 +2,20 @@
 
 int main(void) {
 	// your code goes here
-	int old,neww;
-	scanf("%d %d",&old,&neww);
-    if(old<neww)
-    {
-        printf("Old\n");
-    }
-    else if(old>neww)
-    {
-        printf("New\n");
-    }
-    else if(old==neww)
-    {
-        printf("Same\n");
-    }
-	return 0;
+	int a,b;
+	scanf("%d %d",&a,&b);
+	if(a<b)
+	{
+	    printf("Old\n");
+	}
+	else if(b<a)
+	{
+	    printf("New\n");
+	}
+	else
+	{
+	    printf("Same\n");
+	}
+
 }
 
