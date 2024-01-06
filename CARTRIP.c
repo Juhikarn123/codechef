@@ -2,21 +2,22 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int km;
-	    scanf("%d",&km);
-	    if(km<=300)
+	    int a,rup;
+	    scanf("%d",&a);
+	    if(a<=300)
 	    {
-	        printf("3000\n");
+	        rup=300*10;
 	    }
 	    else
 	    {
-	        printf("%d\n",km*10);
+	        rup=a*10;
 	    }
+	    printf("%d\n",rup);
 	}
-	return 0;
+
 }
 
