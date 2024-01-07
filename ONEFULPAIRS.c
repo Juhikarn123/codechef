@@ -4,14 +4,14 @@ int main(void) {
 	// your code goes here
 	int a,b;
 	scanf("%d %d",&a,&b);
-	int pair=a+b+(a*b);
-	if(pair==111)
+	int t=a+b+a*b;
+	if(t==111)
 	{
-	    printf("Yes\n");
+	    printf("Yes");
 	}
 	else
 	{
-	    printf("No\n");
+	    printf("No");
 	}
 	return 0;
 }

@@ -1,24 +1,18 @@
 #include <stdio.h>
 
-int main(void) {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
-	{
-	    int doublee,triple;
-	    scanf("%d %d",&doublee,&triple);
-	    int d_cost=3*doublee;
-	    int t_cost=2*triple;
-	    if(d_cost<=t_cost)
-	    {
-	        printf("%d\n",d_cost);
-	    }
-	    else
-	    {
-	        printf("%d\n",t_cost);
-	    }
-	}
+int main()
+{
+    int t,x,y,a,b;
+    scanf("%d\n",&t);
+    while(t--)
+    {
+        scanf("%d %d\n",&x,&y);
+        a=3*x;
+        b=2*y;
+        if(a<b)
+        printf("%d\n",a);
+        else
+        printf("%d\n",b);
+    }
 	return 0;
 }
-

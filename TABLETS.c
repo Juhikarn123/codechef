@@ -2,22 +2,17 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+		int T;
+	scanf("%d",&T);
+	while(T--)
 	{
-	    int day,tablet;
-	    scanf("%d %d",&day,&tablet);
-	    int need=day*3;
-	    if(need<=tablet)
-	    {
-	        printf("YES\n");
-	    }
+	    int x,y;
+	    scanf("%d%d",&x,&y);
+	    if(x<=y/3)
+	    printf("\n yes");
 	    else
-	    {
-	        printf("NO\n");
-	    }
+	    printf("\n no");
 	}
+
 	return 0;
 }
-
