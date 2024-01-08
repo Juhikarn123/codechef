@@ -2,16 +2,16 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	int n,m,x;
+	int sum=0;
+	scanf("%d",&t);
+	while(t-->0)
 	{
-	    int l,b,cost;
-	    scanf("%d %d %d",&l,&b,&cost);
-	    int p=2*l+2*b;
-	    int t_cost=p*cost;
-	    printf("%d\n",t_cost);
+	    scanf("%d%d%d",&n,&m,&x);
+	    sum=n*2+m*2;
+	    x=sum*x;
+	    printf("%d \n ",x);
 	}
 	return 0;
 }
-

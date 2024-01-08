@@ -2,25 +2,20 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
-	{
-	    int n;
-	    scanf("%d",&n);
-	    if(n<4)
-	    {
-	        printf("MILD\n");
-	    }
-	    else if(n>=4 && n<7)
-	    {
+	int T;
+	scanf("%d",&T);
+	while(T--){
+	    int X;
+	    scanf("%d",&X);
+	    if(X>=4 && X<7){
 	        printf("MEDIUM\n");
 	    }
-	    else
-	    {
+	    else if(X<4){
+	        printf("MILD\n");
+	    }
+	    else {
 	        printf("HOT\n");
 	    }
 	}
 	return 0;
 }
-

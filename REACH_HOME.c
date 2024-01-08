@@ -1,23 +1,15 @@
 #include <stdio.h>
 
 int main(void) {
+    int hgwp;
+    scanf("%d",&hgwp);
+    while(hgwp--){
+        int mkl,loi;
+        scanf("%d %d",&mkl,&loi);
+        int wpk=mkl*5;
+        if(wpk>=loi) printf("YES\n");
+        else printf("NO\n");
+    }
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
-	{
-	    int fuel,distance;
-	    scanf("%d %d",&fuel,&distance);
-	    int limit_distance=fuel*5;
-	    if(distance<=limit_distance)
-	    {
-	        printf("YES\n");
-	    }
-	    else
-	    {
-	        printf("NO\n");
-	    }
-	}
 	return 0;
 }
-

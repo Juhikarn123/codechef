@@ -1,22 +1,18 @@
 #include <stdio.h>
 
 int main(void) {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int T;
+	scanf("%d",&T);
+	while(T--)
 	{
-	    int n;
-	    scanf("%d",&n);
-	    if(n%10==0)
-	    {
-	        printf("0\n");
-	    }
+	    int x;
+	    scanf("%d",&x);
+	    if(x>10)
+	        printf("%d\n",x%10);
+	    else if(x<10)
+	        printf("%d\n",x);
 	    else
-	    {
-	     printf("%d\n",n%10);
-	    }
+	        printf("0\n");
 	}
 	return 0;
 }
-
