@@ -1,16 +1,12 @@
 #include <stdio.h>
 
 int main(void) {
+    int t;
+    scanf("%d",&t);
+    while(t--){
+        int n,x;
+        scanf("%d%d",&n,&x);
+        printf("\n%d",n-x); }
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
-	{
-	    int alice,bob;
-	    scanf("%d %d",&alice,&bob);
-	    int score=alice-bob;
-	    printf("%d\n",score);
-	}
 	return 0;
 }
-

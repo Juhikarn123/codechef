@@ -1,26 +1,18 @@
 #include <stdio.h>
 
 int main(void) {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
-	{
-	    int donations;
-	    scanf("%d",&donations);
-	    if(donations<=3)
-	    {
-	        printf("BRONZE\n");
-	    }
-	    else if(donations>3 && donations<=6)
-	    {
-	        printf("SILVER\n");
-	    }
-	    else if(donations>6)
-	    {
-	        printf("GOLD\n");
-	    }
-	}
+			int i,t;
+scanf("%d",&t);
+for(i=1;i<=t;i++)
+{
+    int x;
+    scanf("%d",&x);
+    if(x<=3)
+    printf("BRONZE\n");
+    else if(x>3 && x<=6)
+    printf("SILVER\n");
+    else
+    printf("GOLD\n");
+}
 	return 0;
 }
-

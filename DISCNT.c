@@ -1,17 +1,21 @@
 #include <stdio.h>
 
-int main(void) {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
-	{
-	    int n;
-	    scanf("%d",&n);
-	    int d=n*100/100;
-	    int pay=100-d;
-	    printf("%d\n",pay);
-	}
+int main() 
+{
+    int T,x,n;
+    scanf("%d",&T);
+    int a[T];
+    for(int i=0;i<T;i++)
+    {
+       scanf("%d",&n);
+       x=100-n;
+       a[i]=x;
+       
+    }
+    for(int i=0;i<T;i++)
+    {
+        printf("%d\n",a[i]);
+    }
+	
 	return 0;
 }
-
