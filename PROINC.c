@@ -1,18 +1,13 @@
 #include <stdio.h>
 
 int main(void) {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t,a,b,c;
+	scanf("%d \n",&t);
+	while(t--)
 	{
-	    int a,b;
-	    scanf("%d %d",&a,&b);
-	    int diff=a-b;
-	    int profit=a+(a*10/100);
-	    int new_profit=profit-diff;
-	    printf("%d\n",new_profit);
+	    scanf("%d %d \n",&a,&b);
+	    c=a-b;
+	    printf("%d \n",((a+(a/10))-c));
 	}
 	return 0;
 }
-

@@ -1,22 +1,14 @@
 #include <stdio.h>
-
 int main(void) {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
-	{
-	    int x,y;
-	    scanf("%d %d",&x,&y);
-	    if(x>y)
-	    {
-	        printf("%d\n",x-y);
-	    }
-	    else
-	    {
-	        printf("%d\n",y-x);
-	    }
-	}
-	return 0;
+int t;
+	scanf("%d\n",&t);
+	while(t--){
+	   int p,q;
+	   scanf("%d %d \n",&p,&q);
+	   if(p>q) 
+	   printf("%d\n",p-q);
+	   else
+	   printf("%d\n",q-p);
+	   }	
+	   return 0;
 }
-
