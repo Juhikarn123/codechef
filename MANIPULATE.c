@@ -1,22 +1,21 @@
 #include <stdio.h>
 
-int main(void) {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+int main(void) 
+{
+	int T;
+	scanf("%d",&T);
+	while(T--)
 	{
-	    int a,b;
-	    scanf("%d %d",&a,&b);
-	    if(a>=b)
+	    int X,Y;
+	    scanf("%d%d",&X,&Y);
+	    if(X>=Y)
 	    {
-	        printf("YES\n");
+	        printf("\nYES");
 	    }
 	    else
 	    {
-	        printf("NO\n");
+	        printf("\nNO");
 	    }
 	}
 	return 0;
 }
-

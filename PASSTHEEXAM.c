@@ -1,23 +1,17 @@
 #include <stdio.h>
 
 int main(void) {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t--)
 	{
-	    int a,b,c;
-	    scanf("%d %d %d",&a,&b,&c);
-	    int total=a+b+c;
-	    if(total>=100 && a>=10 && b>=10 && c>=10)
-	    {
-	        printf("PASS\n");
-	    }
+	    int a,b,c,d;
+	    scanf("%d%d%d",&a,&b,&c);
+	    d=a+b+c;
+	    if(d>=100&&a>=10&&b>=10&&c>=10)
+	    printf("pass\n");
 	    else
-	    {
-	        printf("FAIL\n");
-	    }
+	    printf("fail\n");
 	}
 	return 0;
 }
-
