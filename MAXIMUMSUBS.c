@@ -1,17 +1,14 @@
 #include <stdio.h>
-
-int main(void) {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+#include <math.h>
+int main(void) 
+{
+	int i,t,x,totTime;
+	scanf("%d",&t);
+	for(i=0;i<t;i++)
 	{
-	    int time;
-	    scanf("%d",&time);
-	    int sec=time*60;
-	    int sub=sec/30;
-	    printf("%d\n",sub);
+	    scanf("%d",&x);
+	    totTime = x*60 - 5;
+	    printf("%.f\n",ceil(totTime/30.0));
 	}
 	return 0;
 }
-
