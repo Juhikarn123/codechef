@@ -1,16 +1,15 @@
 #include <stdio.h>
 
-int main() {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
-	{
-	    int a,b;
-	    scanf("%d %d",&a,&b);
-	    int count=2*a+4*b;
-	    printf("%d\n",count);
-	}
+int main()
+{
+int t,i,c,b,n,m;
+scanf("%d",&t);
+for(i=1;i<=t;i++)
+{
+    scanf("%d %d",&n,&m);
+    c=4*m;
+    b=2*n;
+    printf("%d\n",c+b);
+}
 	return 0;
 }
-

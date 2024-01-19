@@ -1,28 +1,18 @@
 #include <stdio.h>
 
-int main(void) {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+int main(void) 
+{
+	int i,t,a,b,c,d;
+	scanf("%d",&t);
+	for(i=0;i<t;i++)
 	{
-	    int xa,ya,xb,yb;
-	    scanf("%d %d %d %d",&xa,&ya,&xb,&yb);
-	    int first=xa-xb;
-	    int second=ya-yb;
-	    if(first>second)
-	    {
-	        printf("Second\n");
-	    }
-	    else if(first<second)
-	    {
-	        printf("First\n");
-	    }
-	    else if(first==second)
-	    {
-	        printf("Any\n");
-	    }
+	    scanf("%d %d %d %d",&a,&b,&c,&d);
+	    if((a-c)<(b-d))
+	    printf("First\n");
+	    else if((a-c)==(b-d))
+	    printf("Any\n");
+	    else 
+	    printf("Second\n");
 	}
 	return 0;
 }
-

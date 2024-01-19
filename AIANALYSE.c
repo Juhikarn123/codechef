@@ -1,17 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
-	// your code goes here
-	int n;
-	scanf("%d",&n);
-	if(n<=1000)
+	int c;
+	scanf("%d",&c);
+	if(c<=1000)
 	{
-	    printf("Yes\n");
+	    printf("yes\n");
 	}
-	else
-	{
-	    printf("No\n");
+	else{
+	    printf("no\n");
 	}
 	return 0;
 }
-
