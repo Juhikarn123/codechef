@@ -1,24 +1,20 @@
 #include <stdio.h>
 
 int main(void) {
-	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
+	int t;
+	scanf("%d",&t);
+	while(t!=0)
 	{
-	    int a,b,c;
-	    scanf("%d %d %d",&a,&b,&c);
-	    int rem=b-c;
-	    if(rem>=a)
+	    int n,m,k;
+	    scanf("%d%d%d",&n,&m,&k);
+	    if(n+k<=m)
 	    {
-	        printf("Yes\n");
-	        
+	        printf("yes\n");
 	    }
-	    else
-	    {
-	        printf("No\n");
+	    else{
+	        printf("no\n");
 	    }
+	    t--;
 	}
 	return 0;
 }
-

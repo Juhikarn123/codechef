@@ -1,23 +1,24 @@
 #include <stdio.h>
 
 int main(void) {
+    int t;
+    scanf("%d", &t);
+    while(t!=0)
+    {
+        int x,y;
+        scanf("%d %d", &x, &y);
+        if(x>y)
+        {
+            printf("%d \n",y);
+        }
+        else if (x==y)
+        {
+            printf("%d \n",x);
+        }
+        else
+        printf("%d \n",x);
+        t--;
+    }
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
-	{
-	    int carprice,damage,return_mon;
-	    scanf("%d %d",&carprice,&damage);
-	    if(carprice>=damage)
-	    {
-	     return_mon=damage;   
-	    }
-	    else
-	    {
-	        return_mon=carprice;
-	    }
-	    printf("%d\n",return_mon);
-	}
 	return 0;
 }
-

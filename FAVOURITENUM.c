@@ -2,25 +2,17 @@
 
 int main(void) {
 	// your code goes here
-	int testcase;
-	scanf("%d",&testcase);
-	while(testcase--)
-	{
-	    int a;
-	    scanf("%d",&a);
-	    if(a%2==0 && a%7==0)
-	    {
-	        printf("Alice\n");
-	    }
-	    else if(a%2!=0 && a%9==0)
-	    {
-	        printf("Bob\n");
-	    }
+	int t;
+	scanf("%d",&t);
+	while(t--){
+	    int x;
+	    scanf("%d",&x);
+	    if(x%2==0 && x%7==0)
+	    printf("alice\n");
+	    else if(x%2 !=0 && x%9==0)
+	    printf("bob\n");
 	    else
-	    {
-	        printf("Charlie\n");
-	    }
+	    printf("charlie\n");
 	}
 	return 0;
 }
-

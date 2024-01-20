@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int main(void) {
-	// your code goes here
-	int a;
-	scanf("%d",&a);
-	if(a>=750)
+int main()
+{
+	int x;
+	scanf("%d\n",&x);
+	if(x>=750)
 	{
 	    printf("YES\n");
 	}
@@ -14,4 +14,3 @@ int main(void) {
 	}
 	return 0;
 }
-

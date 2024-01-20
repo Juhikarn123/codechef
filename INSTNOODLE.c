@@ -4,8 +4,8 @@ int main(void) {
 	// your code goes here
 	int a,b;
 	scanf("%d %d",&a,&b);
-	int pack=a*b;
-	printf("%d\n",pack);
+	int c=a*b;
+	printf("%d",c);
 	return 0;
 }
 

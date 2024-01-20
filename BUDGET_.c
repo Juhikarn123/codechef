@@ -1,23 +1,21 @@
 #include <stdio.h>
 
-int main(void) {
-	// your code goes here
-	int tescase;
-	scanf("%d",&tescase);
-	while(tescase--)
+int main(void) 
+{
+	int T;
+	scanf("%d",&T);
+	while(T--)
 	{
-	    int a,b;
-	    scanf("%d %d",&a,&b);
-	    int exp=b*30;
-	    if(a>=exp)
+	    int x,y;
+	    scanf("%d%d",&x,&y);
+	    if(30*y<=x)
 	    {
-	        printf("YES\n");
+	        printf("\nyes");
 	    }
 	    else
 	    {
-	        printf("NO\n");
+	        printf("\nno");
 	    }
 	}
 	return 0;
 }
-

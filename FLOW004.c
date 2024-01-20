@@ -2,18 +2,27 @@
 //Click on the SUBMIT button to make a submission to this problem.
 
 #include <stdio.h>
-
-int main()
+void main()
 {
-    int ld,n,t,r;
-    
+    int t;
     scanf("%d",&t);
-    while(t--){
-        scanf("%d",&n);
-        ld = n%10;
-        while(n>0) {r=n%10; n/=10;}
-        printf("%d\n",r+ld);
-    }
-    return 0;
-}
+    while (t--)
+    {
+        /* code */
+        int num;
+        int sum = 0;
+        scanf("%d",&num);
+        int last = num%10;
+        while(num>0)
+        {
+            int rem = num%10;
+            sum = sum*10+rem;
+            num = num/10;
+        }
+        int first = sum%10;
+        int result = last+first;
+        printf("%d\n",result);
 
+    }
+    
+}
